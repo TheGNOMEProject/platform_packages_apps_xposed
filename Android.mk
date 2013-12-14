@@ -1,0 +1,10 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Xposed
+LOCAL_SRC_FILES := Xposed.apk
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT)/app
+include $(BUILD_PREBUILT)
